@@ -1,0 +1,197 @@
+/* Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+html {
+  background-color: var(--eggshell);
+}
+
+* {
+  margin: 1rem 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Variables */
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --darkraspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rosewhite: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --lightgrey: hsl(30, 18%, 87%);
+  --wengebrown: hsl(30, 10%, 34%);
+  --darkcharcoal: hsl(24, 5%, 18%);
+}
+
+/* Body and Main styles */
+
+body {
+  font-size: 16px;
+  color: var(--wengebrown);
+  font-family: outfit,serif;
+}
+
+main {
+  background-color: var(--white);
+  border-radius: 1rem;
+  max-width: 650px;
+  padding: 1rem 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+/* Common list styles */
+
+ul {
+  list-style-position: inside;
+  text-indent: 1rem;
+}
+
+li::marker {
+  color: var(--nutmeg);
+}
+
+/* Image styles */
+
+img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text styles */
+
+h1{
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--darkcharcoal);
+}
+p{
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--nutmeg);
+}
+
+/* Prepartion time styles */
+
+#prepartion-time {
+  background-color: var(--rosewhite);
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+
+#prepartion-time li{
+  color: var(--wengebrown);
+}
+
+#prepartion-time h3 {
+  color: var(--darkraspberry);
+}
+
+/* Ingredients styles */
+
+#ingredients{
+  padding: .4rem 0;
+}
+
+#ingredients li{
+  text-indent: -1.5rem;
+  margin-left: 1rem;
+  color: var(--wengebrown);
+}
+
+/* Instrucitons syles */
+
+#instructions{
+  padding: .3rem 0;
+}
+
+#instructions ol{
+  padding-left: 1rem;
+}
+
+#instructions ol li{
+  color: var(--nutmeg);
+  font-weight: bold;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  
+}
+#instructions ol li p{
+  color: var(--wengebrown);
+  font-weight: normal;
+}
+
+/* Nutrition styles */
+
+#nutrition{
+  padding-top: .2rem;
+}
+
+/* Table styles */
+
+table {
+  width: 100%;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+table td:nth-child(2) {
+  font-weight: 600;
+  color: var(--nutmeg);
+}
+table td:first-child {
+  text-indent: 1rem;
+}
+
+/* Attribution styles */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Mobile responsive */
+
+@media (max-width:508px){
+  html{
+    margin: 0;
+  }
+  img{
+      top: 0;
+      left: 0;
+      height: 200px;
+      margin-top: 0;
+      border-radius: 0;
+      position: absolute;
+      max-width: 100%;
+  }
+  h1{
+    padding-top: 40%;
+  }
+  main{
+    padding: 0 2rem;
+    border-radius:0px;
+    padding-bottom: 1rem;
+  }
+}
