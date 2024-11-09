@@ -13,7 +13,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./Screenshot_19-5-2024_102644_127.0.0.1.jpeg)
+![](./screenshot.jpeg)
 
 
 ### Links
